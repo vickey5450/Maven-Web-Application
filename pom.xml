@@ -104,7 +104,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name> Snapshot Nexus Repository </name>
-	      <url>http://13.207.21.217:5450/repository/flipkart-web-snapshot/</url>
+	      <url>http://13.207.21.217:5450/repository/vickey-web-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
