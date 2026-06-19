@@ -13,7 +13,6 @@
 <h1 align="center">Phone Number: +91 9999605450</h1>
 <h1 align="center">Vickey web application is a Very Good for Learning AWS DevOps, Jenkins, Docker, Kubernetes, GitOps, ArgoCD, Terraform and Amazon Web Services</h1>
 
-<h1 align="center">Trainer Name: Bhaskar Reddy Lacchannagari</h1>
 
 <hr>
 <br>
