@@ -38,9 +38,8 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 	</span>
 	<span style="font-weight: bold;">
 		vickey web application, 
-		dwarka new delhi-59,
-	
-		+91 9999605440 and 
+	    Dwarka,New Delhi,
+	    +91 9999605440 and 
 		vickey5450@Gmail.com
 		<br>
 		<a href="mailto:Devopstrainingblr@Gmail.com">Mail to Mithun Technologies</a>
