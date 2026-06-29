@@ -4,7 +4,7 @@ pipeline
   
   tools
   {
-    maven 'Maven_3.8.2'
+    maven 'Maven 3.9.16'
   }
   
   triggers
@@ -24,7 +24,7 @@ pipeline
     {
       steps()
       {
-        git branch: 'development', credentialsId: '957b543e-6f77-4cef-9aec-82e9b0230975', url: 'https://github.com/devopstrainingblr/maven-web-application-1.git'
+       git branch: 'development', credentialsId: '454deace-f7ec-4f04-ac70-3b2795481fd2', url: 'https://github.com/vickey5450/Maven-Web-Application.git'
       }
     }
     
@@ -55,30 +55,12 @@ pipeline
     stage('Deploy Application to Tomcat')
     {
       steps()
-      {
-        sshagent(['bfe1b3c1-c29b-4a4d-b97a-c068b7748cd0'])
+       {
+    sshagent(credentials: ['7749a94e-4363-45de-a3f4-6c3ed92aaa0f'])
         {
-          sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@35.154.190.162:/opt/apache-tomcat-9.0.50/webapps/"
-        }
-      }
-    }
-  }
-
-post
-{
-  success
-  {
-    emailext to: 'devopstrainingblr@gmail.com,mithuntechnologies@yahoo.com',
-    subject: "Pipeline Build is Over Build # is ${env.BUILD_NUMBER} and Build Status is ${currentBuild.result}",
-    body: "Pipeline Build is Over Build # is ${env.BUILD_NUMBER} and Build Status is ${currentBuild.result}",
-    replyTo: 'devopstrainingblr@gmail.com'
-  }
-  failure
-  {
-    emailext to: 'devopstrainingblr@gmail.com,mithuntechnologies@yahoo.com',
-    subject: "Pipeline Build is Over Build # is ${env.BUILD_NUMBER} and Build Status is ${currentBuild.result}",
-    body: "Pipeline Build is Over Build # is ${env.BUILD_NUMBER} and Build Status is ${currentBuild.result}",
-    replyTo: 'devopstrainingblr@gmail.com'
+      sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.7.238.125:/opt/apache-tomcat-9.0.118/webapps"
+          }
+       }
     }
   }
 }
