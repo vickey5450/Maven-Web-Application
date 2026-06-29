@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.mt</groupId>
-	<artifactId>Raven-web-application</artifactId>
+	<artifactId>vickey-web-app</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	
-	<name>Raven-web-application</name>
+	<name>vickey-web-app</name>
 
 	<description>Maven Web Project for Java Project</description>
 
@@ -22,8 +22,8 @@
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
 		<sonar.host.url>http://13.204.96.234:9000/</sonar.host.url>
-		<sonar.login>admin</sonar.login>
-		<sonar.token>sqa_f9574dddbd0ebfa2e047de265d02721616a36c4d</sonar.token>
+		<sonar.token>admin</sonar.token>
+		<sonar.token>sqa_16c699a4f966b70e2913cb2d61fcaeb79c1f6793</sonar.token> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -103,14 +103,14 @@
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.207.21.217:5450/repository/rock/</url>
+	      <name> Snapshot Nexus Repository </name>
+	      <url>http://13.207.21.217:5450/repository/vickey-web-app/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>Raven-web-application</finalName>
+		<finalName>vickey-web-app</finalName>
 		
 		<plugins>
 			<plugin>
